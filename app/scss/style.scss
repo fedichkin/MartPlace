@@ -1,14 +1,18 @@
-html {
-  box-sizing: border-box;
+@import "vars";
+@import "global";
+@import "fonts";
+
+.regular {
+  font-family: "Quicksand-Regular", sans-serif;
+  font-weight: 400;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.medium {
+  font-family: "Quicksand-Medium", sans-serif;
+  font-weight: 500;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-  background-color: red;
-  display: flex;
+.bold {
+  font-family: "Quicksand-Bold", sans-serif;
+  font-weight: 700;
 }
