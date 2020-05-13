@@ -2,17 +2,153 @@
 @import "global";
 @import "fonts";
 
-.regular {
-  font-family: "Quicksand-Regular", sans-serif;
-  font-weight: 400;
+.header__top {
+  background-color: $top;
 }
 
-.medium {
-  font-family: "Quicksand-Medium", sans-serif;
-  font-weight: 500;
+.header__top-inner {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.bold {
+.header__logo {
+  display: flex;
+  align-items: center;
   font-family: "Quicksand-Bold", sans-serif;
   font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  margin-left: 7px;
+
+  span {
+    color: $blue;
+  }
+
+  img {
+    margin-right: 6px;
+  }
 }
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__info-button {
+  font-size: 14px;
+  color: #fff;
+  background-color: $blue;
+  display: inline-block;
+  padding: 12px 18px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+}
+
+.header__info-notifications {
+  margin: 0 48px;
+
+  .lnr {
+    color: $icon;
+    font-size: 20px;
+    display: inline-block;
+
+    + .lnr {
+      margin-left: 32px;
+    }
+  }
+}
+
+.header__user {
+  display: flex;
+  align-items: center;
+
+  &-photo {
+    background-color: $dark-grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &-info {
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-name {
+    font-family: "Quicksand-Medium", sans-serif;
+    font-weight: 500;
+    color: $font-menu;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  &-money {
+    color: $blue;
+    font-size: 15px;
+  }
+}
+
+.header__menu {
+  background-color: #fff;
+}
+
+.header__menu-inner {
+  margin: 17px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  &__list {
+    li {
+      display: inline-block;
+
+      + li {
+        margin-left: 34px;
+      }
+    }
+  }
+
+  a {
+    font-family: "Quicksand-Medium", sans-serif;
+    font-weight: 500;
+    color: $font-menu;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.search {
+  form {
+    position: relative;
+    width: 358px;
+
+    input {
+      padding: 14px 75px 14px 23px;
+      border: 1px solid #d9dfe5;
+      border-radius: 32px;
+      width: 100%;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #898f96;
+      }
+    }
+
+    button {
+      position: absolute;
+      background-color: $blue;
+      color: #fff;
+      border: none;
+      width: 70px;
+      height: 47px;
+      border-radius: 32px;
+      right: 0;
+    }
+  }
+}
+

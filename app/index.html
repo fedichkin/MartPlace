@@ -10,9 +10,57 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<span class="regular">Hello Regular</span>
-<span class="medium">Hello Medium</span>
-<span class="bold">Hello Bold</span>
+
+<header class="header">
+    <div class="header__top">
+        <div class="container">
+            <div class="header__top-inner">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="logo">
+                    Mart<span>Place</span>
+                </div>
+                <div class="header__info">
+                    <a class="header__info-button" href="#">Become a Seller</a>
+                    <div class="header__info-notifications">
+                        <a href="#" class="lnr lnr-alarm"></a>
+                        <a href="#" class="lnr lnr-envelope"></a>
+                        <a href="#" class="lnr lnr-cart"></a>
+                    </div>
+                    <div class="header__info-user header__user">
+                        <div class="header__user-photo"></div>
+                        <div class="header__user-info">
+                            <div class="header__user-name">Taofiq Hakim</div>
+                            <div class="header__user-money">$20.45</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__menu">
+        <div class="container">
+            <div class="header__menu-inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">all products</a></li>
+                        <li><a href="#">wordpress</a></li>
+                        <li><a href="#">festures</a></li>
+                        <li><a href="#">pages</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <form action="">
+                    <input type="text" placeholder="Search product here..." required>
+                    <button type="submit"><i class="lnr lnr-magnifier"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.js"></script>
